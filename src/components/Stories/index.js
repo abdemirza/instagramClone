@@ -1,6 +1,7 @@
 import React, {Profiler} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import Story from '../Story';
+import styles from './styles';
 
 const data = [
   {
@@ -42,6 +43,7 @@ const Stories = () => {
     <FlatList
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}
+      style={styles.container}
       horizontal
       data={data}
       renderItem={({item}) => (

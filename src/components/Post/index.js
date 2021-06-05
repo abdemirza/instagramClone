@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import PostBody from '../PostBody';
-import Body from '../PostBody';
 import PostFooter from '../PostFooter';
 import PostHeader from '../PostHeader';
 
@@ -10,7 +9,11 @@ const Post = ({post}) => {
     <View>
       <PostHeader imageUri={post.user.imageUri} name={post.user.name} />
       <PostBody imageUri={post.imageUri} />
-      <PostFooter />
+      <PostFooter
+        likesCount={post.likesCount}
+        caption={post.caption}
+        postedAt={post.postedAt}
+      />
     </View>
   );
 };
