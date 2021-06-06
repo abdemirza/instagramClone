@@ -7,6 +7,7 @@ import PostHeader from '../PostHeader';
 const Post = ({post}) => {
   return (
     <View>
+      
       <PostHeader imageUri={post.user.imageUri} name={post.user.name} />
       <PostBody imageUri={post.imageUri} />
       <PostFooter
