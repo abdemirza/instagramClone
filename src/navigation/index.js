@@ -1,12 +1,11 @@
-import { NavigationContainer } from '@react-navigation/native';
-import React from 'react';
-import {View, Text} from 'react-native';
-import TabNavigator from './TabNavigator';
+import React, {useContext} from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import BottomHomeNavigator from './BottomHomeNavigator';
 
 const AppNavContainer = () => {
   return (
     <NavigationContainer>
-        <TabNavigator></TabNavigator>
+      <BottomHomeNavigator />
     </NavigationContainer>
   );
 };
