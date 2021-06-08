@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, FlatList} from 'react-native';
 import Post from '../Post';
-import Stories from '../Stories';
+import UserStoriesPreview from '../UserStoriesPreview';
 const data = [
   {
     user: {
@@ -56,7 +56,7 @@ const Feed = () => {
   return (
     <View>
       <FlatList
-        ListHeaderComponent={Stories}
+        ListHeaderComponent={UserStoriesPreview}
         data={data}
         renderItem={({item}) => <Post post={item} />}
       />
